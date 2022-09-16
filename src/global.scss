@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+h1 {
+  margin-top: 10px;
+  font-size: 25px;
+}
+
+.searchArea {
+  margin-top: 20px;
+  display: flex;
+  .searchArea_input {
+    input {
+      padding: 3px;
+    }
+  }
+  .searchArea_button {
+    margin-left: 10px;
+    padding: 3px;
+  }
+}
+
+.searchedList {
+  .searchedItem {
+    margin-top: 30px;
+    &:not(:first-child) {
+      padding-top: 20px;
+      border-top: 1px solid #ccc;
+    }
+    .searchedItem_link {
+      text-decoration: none;
+      font-size: 20px;
+    }
+    .searchedItem_desc {
+      margin-top: 4px;
+    }
+    .searchedItem_createdBy {
+      text-decoration: none;
+    }
+    .searchedItem_stars {
+      margin-top: 4px;
+    }
+  }
+}
+
+.paginateButtons {
+  margin-top: 20px;
+  width: 80%;
+  height: 40px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  a {
+    cursor: pointer;
+    padding: 10px;
+    margin: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: 0.2s;
+    &:hover {
+      background: rgb(78, 133, 242);
+      color: #fff;
+    }
+  }
+  .paginationDisabled {
+    a {
+      pointer-events: none;
+      opacity: 0.3;
+    }
+  }
+  .paginationActive {
+    a {
+      background: rgb(78, 133, 242);
+      color: #fff;
+    }
+  }
+}
