@@ -33,17 +33,19 @@ function App() {
       <h1>Search Github Repositories</h1>
       <SearchArea repositories={repositories} setRepositories={setRepositories} />
       <SearchedList repositories={displayRepositories} />
-      <ReactPaginate
-        previousLabel={"Previous"}
-        nextLabel={"Next"}
-        pageCount={pageCount}
-        onPageChange={changePage}
-        containerClassName="paginateButtons"
-        previousLinkClassName="previousButton"
-        nextLinkClassName="nextButton"
-        disabledClassName="paginationDisabled"
-        activeClassName="paginationActive"
-      />
+      {repositories.length > 0 &&
+        <ReactPaginate
+          previousLabel={"Previous"}
+          nextLabel={"Next"}
+          pageCount={pageCount}
+          onPageChange={changePage}
+          containerClassName="paginateButtons"
+          previousLinkClassName="previousButton"
+          nextLinkClassName="nextButton"
+          disabledClassName="paginationDisabled"
+          activeClassName="paginationActive"
+        />
+      }
     </div>
   );
 }

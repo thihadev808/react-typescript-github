@@ -15,7 +15,7 @@ const SearchArea:React.FC<IProps> = ({ repositories, setRepositories}) => {
     setinputValue(e.target.value)
   }
 
-  const handleClick = ():void => {
+  const handleSearch = ():void => {
     axios.get(`https://api.github.com/search/repositories?q=${inputValue}`)
       .then(response => {
         setRepositories(response.data.items)
@@ -25,12 +25,18 @@ const SearchArea:React.FC<IProps> = ({ repositories, setRepositories}) => {
       })
   }
 
+  const handleClear = ():void => {
+    setinputValue("")
+    setRepositories([])
+  }
+
   return (
     <div className="searchArea">
       <div className="searchArea_input">
         <input type="text" placeholder="react etc..." value={inputValue} onChange={handleChange} name="value"/>
       </div>
-      <button className="searchArea_button" onClick={handleClick}>Search</button>
+      <button className="searchArea_search" onClick={handleSearch}>Search</button>
+      <button className="searchArea_clear" onClick={handleClear}>Clear</button>
     </div>
   )
 }

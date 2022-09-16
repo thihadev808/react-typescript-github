@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.40bfa28f.css",
-    "main.js": "/static/js/main.f1fb922c.js",
-    "static/js/787.fa36d572.chunk.js": "/static/js/787.fa36d572.chunk.js",
-    "index.html": "/index.html",
-    "main.40bfa28f.css.map": "/static/css/main.40bfa28f.css.map",
-    "main.f1fb922c.js.map": "/static/js/main.f1fb922c.js.map",
-    "787.fa36d572.chunk.js.map": "/static/js/787.fa36d572.chunk.js.map"
+    "main.css": "/react-typescript-github/static/css/main.e2d2d31d.css",
+    "main.js": "/react-typescript-github/static/js/main.b3ff90c1.js",
+    "static/js/787.fa36d572.chunk.js": "/react-typescript-github/static/js/787.fa36d572.chunk.js",
+    "index.html": "/react-typescript-github/index.html",
+    "main.e2d2d31d.css.map": "/react-typescript-github/static/css/main.e2d2d31d.css.map",
+    "main.b3ff90c1.js.map": "/react-typescript-github/static/js/main.b3ff90c1.js.map",
+    "787.fa36d572.chunk.js.map": "/react-typescript-github/static/js/787.fa36d572.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.40bfa28f.css",
-    "static/js/main.f1fb922c.js"
+    "static/css/main.e2d2d31d.css",
+    "static/js/main.b3ff90c1.js"
   ]
 }
